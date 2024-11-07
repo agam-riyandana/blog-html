@@ -1,181 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agam Riyandana - Blog</title>
-    <meta name="description" content="Portfolio of Agam Riyandana projects and music videos.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Portofolio - Agam Riyandana">
+    <meta name="keywords" content="portfolio indonesia, blogger, id">
+    <title>Portfolio - Agam Riyandana</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        :root {
+            --primary-color: #1a1a2e;
+            --secondary-color: #16213e;
+            --accent-color: #e94560;
+            --text-color: #ffffff;
+        }
+
+        * {
             margin: 0;
             padding: 0;
-            background-color: #0a0a1a;
-            color: #ffffff;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 2rem 1rem;
+            background-color: var(--secondary-color);
+            text-align: center;
+        }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 2rem 1rem;
         }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-        }
+
         h1 {
-            font-size: 2em;
-            margin: 0;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
         }
-        .profession {
-            font-size: 1.2em;
-            color: #cccccc;
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 2rem;
         }
-        .home-icon {
-            font-size: 1.5em;
-            color: #ffffff;
-            text-decoration: none;
-        }
-        .projects {
+
+        .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
+            gap: 2rem;
+            margin-top: 2rem;
         }
+
         .project-card {
-            background-color: #1a1a2a;
-            border-radius: 10px;
+            background-color: var(--secondary-color);
+            border-radius: 8px;
             overflow: hidden;
             transition: transform 0.3s ease;
         }
+
         .project-card:hover {
             transform: translateY(-5px);
         }
+
         .project-image {
             width: 100%;
             height: 200px;
             object-fit: cover;
         }
-        .project-title {
-            padding: 15px;
-            font-size: 1.2em;
-            text-align: center;
+
+        .project-content {
+            padding: 1.5rem;
         }
+
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
         .project-link {
-            display: block;
-            text-align: center;
-            background-color: #3a3a4a;
-            color: #ffffff;
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
             text-decoration: none;
-            padding: 10px;
+            margin-top: 1rem;
             transition: background-color 0.3s ease;
         }
+
         .project-link:hover {
-            background-color: #4a4a5a;
+            background-color: #d63851;
         }
+
         footer {
-            margin-top: 40px;
+            background-color: var(--secondary-color);
+            padding: 2rem 1rem;
+            margin-top: 4rem;
             text-align: center;
-            padding: 20px 0;
-            background-color: #1a1a2a;
         }
+
         .social-icons {
-            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
         }
-        .social-icons a {
-            color: #ffffff;
-            font-size: 1.5em;
-            margin: 0 10px;
+
+        .social-icon {
+            color: white;
+            font-size: 1.5rem;
             text-decoration: none;
             transition: color 0.3s ease;
         }
-        .social-icons a:hover {
-            color: #cccccc;
+
+        .social-icon:hover {
+            color: var(--accent-color);
         }
+
         .copyright {
-            font-size: 0.9em;
-            color: #cccccc;
+            color: #ccc;
+            font-size: 0.9rem;
         }
+
         @media (max-width: 768px) {
-            .projects {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .projects-grid {
                 grid-template-columns: 1fr;
             }
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div>
-                <h1>Agam Riyandana</h1>
-                <p class="profession">Update Konten - Video Music</p>
-            </div>
-            <a href="https://agamriyandana.my.id" class="home-icon"><i class="fas fa-home"></i></a>
-        </header>
+    <header>
+        <h1>Agam Riyandana</h1>
+        <p class="subtitle">Content - Video Music</p>
+    </header>
 
-        <main>
-            <section class="projects">
-                <div class="project-card">
-                    <img src="/rindu pahlawan ayah.jpeg?height=200&width=300" alt="Rindu Pahlawan Ayah" class="project-image">
-                    <h2 class="project-title">Rindu Pahlawan Ayah</h2>
-                    <a href="https://youtu.be/l1y7VJ9X21A?si=wL_358FNS8Fr0_FV" class="project-link">View Content</a>
-                </div>
-                <div class="project-card">
-                    <img src="https://raw.githubusercontent.com/agam-riyandana/blog-html/refs/heads/main/selamat%20Jalan%20sahabat.jpeg?height=200&width=300" alt="Selamat Jalan Sahabat" class="project-image">
-                    <h2 class="project-title">Selamat Jalan Sahabat</h2>
-                    <a href="https://youtu.be/HgneGuqIntA?si=NutN_aAYDPWKHVqo" class="project-link">View Content</a>
-                </div>
-                <div class="project-card">
-                    <img src="/gambar.jpeg?height=200&width=300" alt="R.I.P Yang Tenang Disana" class="project-image">
-                    <h2 class="project-title">R.I.P Yang Tenang Disana</h2>
-                    <a href="https://youtu.be/r5XOhF89svE?si=q-migCKRcWCSPCFp" class="project-link">View Content</a>
-                </div>
-                <div class="project-card">
-                    <img src="/JERITAN HATI YANG TERLUKA.jpg?height=200&width=300" alt="Jeritan Hati Yang Terluka" class="project-image">
-                    <h2 class="project-title">Jeritan Hati Yang Terluka</h2>
-                    <a href="https://youtu.be/D4jnuV5CfV4?si=_J048ETHmEBVap0C" class="project-link">View Content</a>
-                </div>
-                <div class="project-card">
-                    <img src="/lawan judi online.jpg?height=200&width=300" alt="Lawan Judi Online" class="project-image">
-                    <h2 class="project-title">Lawan Judi Online</h2>
-                    <a href="https://youtu.be/xYVyUIbKe1I?si=za1GAtSRVFsGi2a9" class="project-link">View Content</a>
-                </div>
-                <div class="project-card">
-                    <img src="/suka sendiri.jpeg?height=200&width=300" alt="Suka Sendiri" class="project-image">
-                    <h2 class="project-title">Suka Sendiri</h2>
-                    <a href="https://youtu.be/z04gNIZGAsM?si=JI_w1YPVAexG1qe9" class="project-link">View Content</a>
-                </div>
-                <div class="project-card">
-                    <img src="/rindu Ibu.jpeg?height=200&width=300" alt="Rindu Ibu" class="project-image">
-                    <h2 class="project-title">Rindu Ibu</h2>
-                    <a href="https://youtu.be/FRjk_Caxn5M?si=MXF0ZHXb6tfW3rAy" class="project-link">View Content</a>
-                </div>
-                <div class="project-card">
-                    <img src="/Save Palestina Merdeka (1).png?height=200&width=300" alt="Save Palestina Merdeka" class="project-image">
-                    <h2 class="project-title">Save Palestina Merdeka</h2>
-                    <a href="https://youtu.be/hXzIX9edovc?si=T3GZOFS28cLM_1vD" class="project-link">View Content</a>
-                </div>
-                <div class="project-card">
-                    <img src="/mengejar mimpi.jpeg?height=200&width=300" alt="Mengejar Mimpi" class="project-image">
-                    <h2 class="project-title">Mengejar Mimpi</h2>
-                    <a href="https://youtu.be/r5lQT13nUQo?si=I3jDkzrK8WK7iEH0" class="project-link">View Content</a>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <div class="social-icons">
-                <a href="mailto:agamriyandana7@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://instagram.com/realagam1" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/agamriyandana.id" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="https://youtube.com/@agam_riyandana" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.twitter.com/agam_riyandana1/" aria-label="X Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://open.spotify.com/artist/47w2bmfv89qm3wss9v4aEX?si=bLttpBoNT4u85dTDd573VA" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+    <main class="container">
+        <section>
+            <h2>Content Updates</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="/rindu pahlawan ayah.jpeg?height=200&width=300" alt="Keliling Malioboro" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Selamat Jalan Sahabat</h3>
+                        <p>Content Music.</p>
+                        <a href="https://youtu.be/HgneGuqIntA?si=NutN_aAYDPWKHVqo" class="project-link">Lihat Project</a>
+                    </div>
+                </article>
             </div>
-            <p class="copyright">&copy; 2024 Agam Riyandana</p>
-        </footer>
-    </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="mailto:agamriyandana7@gmail.com" class="social-icon" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://instagram.com/realagam1" class="social-icon" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/agamriyandana.id" class="social-icon" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://youtube.com/@agam_riyandana" class="social-icon" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.twitter.com/agam_riyandana1/" class="social-icon" aria-label="X-Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://open.spotify.com/artist/47w2bmfv89qm3wss9v4aEX?si=bLttpBoNT4u85dTDd573VA" class="social-icon" aria-label="Spotify">
+                <i class="fab fa-spotify"></i>
+            </a>
+        </div>
+        <p class="copyright">&copy; 2024 Agam Riyandana. All rights reserved.</p>
+    </footer>
 </body>
 </html>
